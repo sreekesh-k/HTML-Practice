@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="index.php" method="POST" enctype="multipart/form-data">
+        <label for="UserName">username:</label>
+        <input type="text" id="UserName" placeholder="Sreekesh" minlength="5" maxlength="15" required>
+        <br>
+        <lable for="Email">Email:</lable>
+        <input type="email" id="Email" placeholder="123@email.com">
+        <br>
+        <lable for="Password">Password:</lable>
+        <input type="password" id="Password" placeholder="163188" minlength="5" maxlength="15" required>
+        <br>
+        <lable for="phone">Phone:</lable>
+        <input type="tel" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        <br>
+        <lable for="bday">birthday</lable>
+        <input type="date" id="bday">
+        <br>
+        <lable for="qnty">Quantity</lable>
+        <input type="number" id="qnty" min="0" max="99" value="1">
+        <br>
+        <lable for="gender">gender</lable>
+        <br>
+        <lable for="male">male</lable>
+        <input type="radio" id="male">
+        <lable for="female">female</lable>
+        <input type="radio" id="female">
+        <lable for="other">other</lable>
+        <input type="radio" id="other">
+        <br>
+        <lable for="payment">payment</lable>
+        <select id="payment">
+            <option value="visa">visa</option>
+            <option value="mastercard">mastercard</option>
+            <option value="giftcard">giftcard</option>
+        </select>
+        <br>
+        <lable for="subscribe">subscribe</lable>
+        <input type="checkbox" id="subscribe">
+        <br>
+        <lable for="comment">comment</lable>
+        <textarea id="comment" rows ="3" cols="25"></textarea>
+        <br>
+        <lable for ="file">file:</lable>
+        <input type ="file" id="file" accept="image/png, image/jpeg">
+        <br>
+        <input type="reset">
+        <br>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
